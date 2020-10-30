@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+    background-image: url(image/NEW.jpg);
+    background-size: cover;
+}
+
+button{
+    background: none;
+    width: 250px;
+    height: 200px;
+    border: 1px solid;
+    color: #111010;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 80px;
+    transition: .6s;
+    overflow: hidden;
+    
+}
+a{
+    color: #0e0d0d;
+    text-decoration: none;   
+}
+label{
+    
+    color:rgb(2, 2, 2); 
+    font-size: 40px;
+    font-family: monospace;  
+}
+p{
+    
+    padding-left: 1em;
+    font-size: 20px;
+    font-family: monospace;
+    color: black;
+}
+ul{
+    position: relative;
+    top: 10%;
+}
+.head{
+    position: absolute;
+    top: 0%;
+}
+

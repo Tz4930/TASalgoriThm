@@ -1,0 +1,450 @@
+ED=input("What do you want?\n1. Encrypt\n2. Decrypt\n")
+if(ED=="1"):
+    EDT=input("Which method you want to apply>\n1. MK Method\n2. DK Method\n")
+    if(EDT=="1"):
+        text=input("Enter Text Message : ")
+        key=input("Enter Key :")
+
+        if (key=="A" or key=="a"):
+            val = ((2+5)*11)
+            print(val)
+        elif (key=="B" or key=="b"):
+            val = ((2+4)*11)
+            print(val)
+
+        elif (key=="C" or key=="c"):
+            val = ((2+3)*11)
+            print(val)
+        elif (key=="D" or key=="d"):
+            val = ((2+2)*11)
+            print(val)
+        elif (key=="E" or key=="e"):
+            val = ((2+1)*11)
+            print(val)
+        elif (key=="F" or key=="f"):
+            val = ((2+0)*11)
+            print(val)
+        elif (key=="G" or key=="g"):
+            val = ((1+9)*11)
+            print(val)
+        elif (key=="H" or key=="h"):
+            val = ((1+8)*11)
+            print(val)
+        elif (key=="I" or key=="i"):
+            val = ((1+7)*11)
+            print(val)
+        elif (key=="J" or key=="j"):
+            val = ((1+6)*11)
+            print(val)
+        elif (key=="K" or key=="k"):
+            val = ((1+5)*11)
+            print(val)
+        elif (key=="L" or key=="l"):
+            val = ((1+4)*11)
+            print(val)
+        elif (key=="M" or key=="m"):
+            val = ((1+3)*11)
+            print(val)
+        elif (key=="N" or key=="n"):
+            val = ((1+2)*11)
+            print(val)
+        elif (key=="O" or key=="o"):
+            val = ((1+1)*11)
+            print(val)
+        elif (key=="P" or key=="p"):
+            val = ((1+0)*11)
+            print(val)
+        elif (key=="Q" or key=="q"):
+            val = ((0+9)*11)
+            print(val)
+        elif (key=="R" or key=="r"):
+            val = ((0+8)*11)
+            print(val)
+        elif (key=="S" or key=="s"):
+            val = ((0+7)*11)
+            print(val)
+        elif (key=="T" or key=="t"):
+            val = ((0+6)*11)
+            print(val)
+        elif (key=="U" or key=="u"):
+            val = ((0+5)*11)
+            print(val)
+        elif (key=="V" or key=="v"):
+            val = ((0+4)*11)
+            print(val)
+        elif (key=="W" or key=="w"):
+            val = ((0+3)*11)
+            print(val)
+        elif (key=="X" or key=="x"):
+            val = ((0+2)*11)
+            print(val)
+        elif (key=="Y" or key=="y"):
+            val = ((0+1)*11)
+            print(val)
+        elif (key=="Z" or key=="Z"):
+            val = ((0+0)*11)
+            print(val)
+
+        else:
+            print("Invalid key")
+                #A python program to illustrate Caesar Cipher Technique 
+        def encrypt(text,key): 
+            result = "" 
+
+            # traverse text 
+            for i in range(len(text)): 
+                char = text[i] 
+
+                # Encrypt uppercase characters 
+                if (char.isupper()): 
+                    result += chr((ord(char) - key-65) % 26 + 65) 
+
+                # Encrypt lowercase characters 
+                else: 
+                    result += chr((ord(char) - key - 97) % 26 + 97) 
+
+            return result 
+
+        #check the above function 
+        print ("Text : " + text) 
+        print ("Shift : " + str(key)) 
+        print ("Cipher: " + encrypt(text,val) )
+
+
+    
+        
+    elif(EDT=="2"):
+        text=input("Enter Text Message : ")
+        key=input("Enter Key :")
+        if (key=="A" or key=="a"):
+            val = ((2-5)*9)
+            print(val)
+        elif (key=="B" or key=="b"):
+            val = ((2-4)*9)
+            print(val)
+
+        elif (key=="C" or key=="c"):
+            val = ((2-3)*9)
+            print(val)
+        elif (key=="D" or key=="d"):
+            val = ((2-2)*9)
+            print(val)
+        elif (key=="E" or key=="e"):
+            val = ((2-1)*9)
+            print(val)
+        elif (key=="F" or key=="f"):
+            val = ((2-0)*9)
+            print(val)
+        elif (key=="G" or key=="g"):
+            val = ((1-9)*9)
+            print(val)
+        elif (key=="H" or key=="h"):
+            val = ((1-8)*9)
+            print(val)
+        elif (key=="I" or key=="i"):
+            val = ((1-7)*9)
+            print(val)
+        elif (key=="J" or key=="j"):
+            val = ((1-6)*9)
+            print(val)
+        elif (key=="K" or key=="k"):
+            val = ((1-5)*9)
+            print(val)
+        elif (key=="L" or key=="l"):
+            val = ((1-4)*9)
+            print(val)
+        elif (key=="M" or key=="m"):
+            val = ((1-3)*9)
+            print(val)
+        elif (key=="N" or key=="n"):
+            val = ((1-2)*9)
+            print(val)
+        elif (key=="O" or key=="o"):
+            val = ((1-1)*9)
+            print(val)
+        elif (key=="P" or key=="p"):
+            val = ((1-0)*9)
+            print(val)
+        elif (key=="Q" or key=="q"):
+            val = ((0-9)*9)
+            print(val)
+        elif (key=="R" or key=="r"):
+            val = ((0-8)*9)
+            print(val)
+        elif (key=="S" or key=="s"):
+            val = ((0-7)*9)
+            print(val)
+        elif (key=="T" or key=="t"):
+            val = ((0-6)*9)
+            print(val)
+        elif (key=="U" or key=="u"):
+            val = ((0-5)*9)
+            print(val)
+        elif (key=="V" or key=="v"):
+            val = ((0-4)*9)
+            print(val)
+        elif (key=="W" or key=="w"):
+            val = ((0-3)*9)
+            print(val)
+        elif (key=="X" or key=="x"):
+            val = ((0-2)*9)
+            print(val)
+        elif (key=="Y" or key=="y"):
+            val = ((0-1)*9)
+            print(val)
+        elif (key=="Z" or key=="Z"):
+            val = ((0-0)*9)
+            print(val)
+
+        else:
+            print("Invalid key")
+                #A python program to illustrate Caesar Cipher Technique 
+        def encrypt(text,key): 
+            result = "" 
+
+            # traverse text 
+            for i in range(len(text)): 
+                char = text[i] 
+
+                # Encrypt uppercase characters 
+                if (char.isupper()): 
+                    result += chr((ord(char) - key-65) % 26 + 65) 
+
+                # Encrypt lowercase characters 
+                else: 
+                    result += chr((ord(char) - key - 97) % 26 + 97) 
+
+            return result 
+
+        #check the above function 
+        print ("Text : " + text) 
+        print ("Shift : " + str(key)) 
+        print ("Cipher: " + encrypt(text,val) )
+
+    
+    else:
+        print("wrong choice")
+        
+elif (ED=="2"):
+    EDT=input("Which method you want to apply>\n1. MK Method\n2. DK Method\n")
+    if(EDT=="1"):
+        text=input("Enter Text Message : ")
+        key=input("Enter Key :")
+
+        if (key=="A" or key=="a"):
+            val = ((2+5)*11)
+            print(val)
+        elif (key=="B" or key=="b"):
+            val = ((2+4)*11)
+            print(val)
+
+        elif (key=="C" or key=="c"):
+            val = ((2+3)*11)
+            print(val)
+        elif (key=="D" or key=="d"):
+            val = ((2+2)*11)
+            print(val)
+        elif (key=="E" or key=="e"):
+            val = ((2+1)*11)
+            print(val)
+        elif (key=="F" or key=="f"):
+            val = ((2+0)*11)
+            print(val)
+        elif (key=="G" or key=="g"):
+            val = ((1+9)*11)
+            print(val)
+        elif (key=="H" or key=="h"):
+            val = ((1+8)*11)
+            print(val)
+        elif (key=="I" or key=="i"):
+            val = ((1+7)*11)
+            print(val)
+        elif (key=="J" or key=="j"):
+            val = ((1+6)*11)
+            print(val)
+        elif (key=="K" or key=="k"):
+            val = ((1+5)*11)
+            print(val)
+        elif (key=="L" or key=="l"):
+            val = ((1+4)*11)
+            print(val)
+        elif (key=="M" or key=="m"):
+            val = ((1+3)*11)
+            print(val)
+        elif (key=="N" or key=="n"):
+            val = ((1+2)*11)
+            print(val)
+        elif (key=="O" or key=="o"):
+            val = ((1+1)*11)
+            print(val)
+        elif (key=="P" or key=="p"):
+            val = ((1+0)*11)
+            print(val)
+        elif (key=="Q" or key=="q"):
+            val = ((0+9)*11)
+            print(val)
+        elif (key=="R" or key=="r"):
+            val = ((0+8)*11)
+            print(val)
+        elif (key=="S" or key=="s"):
+            val = ((0+7)*11)
+            print(val)
+        elif (key=="T" or key=="t"):
+            val = ((0+6)*11)
+            print(val)
+        elif (key=="U" or key=="u"):
+            val = ((0+5)*11)
+            print(val)
+        elif (key=="V" or key=="v"):
+            val = ((0+4)*11)
+            print(val)
+        elif (key=="W" or key=="w"):
+            val = ((0+3)*11)
+            print(val)
+        elif (key=="X" or key=="x"):
+            val = ((0+2)*11)
+            print(val)
+        elif (key=="Y" or key=="y"):
+            val = ((0+1)*11)
+            print(val)
+        elif (key=="Z" or key=="Z"):
+            val = ((0+0)*11)
+            print(val)
+
+        else:
+            print("Invalid key")
+                #A python program to illustrate Caesar Cipher Technique 
+        #A python program to illustrate Caesar Cipher Technique 
+        def encrypt(text,key): 
+            result = "" 
+
+            # traverse text 
+            for i in range(len(text)): 
+                char = text[i] 
+
+                # Encrypt uppercase characters 
+                if (char.isupper()): 
+                    result += chr((ord(char) + key-65) % 26 + 65) 
+
+                # Encrypt lowercase characters 
+                else: 
+                    result += chr((ord(char) + key - 97) % 26 + 97) 
+
+            return result 
+
+        #check the above function 
+       
+        print ("Text : " + text) 
+        print ("Shift : " + str(key)) 
+        print ("Cipher: " + encrypt(text,val) )
+
+    
+        
+    elif(EDT=="2"):
+        text=input("Enter Text Message : ")
+        key=input("Enter Key :")
+        if (key=="A" or key=="a"):
+            val = ((2-5)*9)
+            print(val)
+        elif (key=="B" or key=="b"):
+            val = ((2-4)*9)
+            print(val)
+
+        elif (key=="C" or key=="c"):
+            val = ((2-3)*9)
+            print(val)
+        elif (key=="D" or key=="d"):
+            val = ((2-2)*9)
+            print(val)
+        elif (key=="E" or key=="e"):
+            val = ((2-1)*9)
+            print(val)
+        elif (key=="F" or key=="f"):
+            val = ((2-0)*9)
+            print(val)
+        elif (key=="G" or key=="g"):
+            val = ((1-9)*9)
+            print(val)
+        elif (key=="H" or key=="h"):
+            val = ((1-8)*9)
+            print(val)
+        elif (key=="I" or key=="i"):
+            val = ((1-7)*9)
+            print(val)
+        elif (key=="J" or key=="j"):
+            val = ((1-6)*9)
+            print(val)
+        elif (key=="K" or key=="k"):
+            val = ((1-5)*9)
+            print(val)
+        elif (key=="L" or key=="l"):
+            val = ((1-4)*9)
+            print(val)
+        elif (key=="M" or key=="m"):
+            val = ((1-3)*9)
+            print(val)
+        elif (key=="N" or key=="n"):
+            val = ((1-2)*9)
+            print(val)
+        elif (key=="O" or key=="o"):
+            val = ((1-1)*9)
+            print(val)
+        elif (key=="P" or key=="p"):
+            val = ((1-0)*9)
+            print(val)
+        elif (key=="Q" or key=="q"):
+            val = ((0-9)*9)
+            print(val)
+        elif (key=="R" or key=="r"):
+            val = ((0-8)*9)
+            print(val)
+        elif (key=="S" or key=="s"):
+            val = ((0-7)*9)
+            print(val)
+        elif (key=="T" or key=="t"):
+            val = ((0-6)*9)
+            print(val)
+        elif (key=="U" or key=="u"):
+            val = ((0-5)*9)
+            print(val)
+        elif (key=="V" or key=="v"):
+            val = ((0-4)*9)
+            print(val)
+        elif (key=="W" or key=="w"):
+            val = ((0-3)*9)
+            print(val)
+        elif (key=="X" or key=="x"):
+            val = ((0-2)*9)
+            print(val)
+        elif (key=="Y" or key=="y"):
+            val = ((0-1)*9)
+            print(val)
+        elif (key=="Z" or key=="Z"):
+            val = ((0-0)*9)
+            print(val)
+
+        else:
+            print("Invalid key")
+        #A python program to illustrate Caesar Cipher Technique 
+        def encrypt(text,key): 
+            result = "" 
+
+            # traverse text 
+            for i in range(len(text)): 
+                char = text[i] 
+
+                # Encrypt uppercase characters 
+                if (char.isupper()): 
+                    result += chr((ord(char) + key-65) % 26 + 65) 
+
+                # Encrypt lowercase characters 
+                else: 
+                    result += chr((ord(char) + key - 97) % 26 + 97) 
+
+            return result 
+
+        #check the above function 
+       
+        print ("Text : " + text) 
+        print ("Shift : " + str(key)) 
+        print ("Cipher: " + encrypt(text,val) )
